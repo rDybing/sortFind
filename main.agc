@@ -117,6 +117,8 @@ function getSortedArrays(mt as myTypeT[], ns ref as numSortedT[], ss ref as strS
 	
 	nst as numSortedT
 	sst as strSortedT
+	ns.length = nil
+	ss.length = nil
 	
 	for i = 0 to mt.length
 		nst.myNumber = mt[i].myNumber
