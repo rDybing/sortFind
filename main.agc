@@ -231,18 +231,6 @@ function findIndex(ns as numSortedT[], ss as strSortedT[], state ref as stateT)
 		endif		
 	endif
 	
-	if state.index + 3 > maxArray
-		max = maxArray
-	else
-		max = state.index + 3
-	endif
-	
-	if state.index - 3 < 0
-		min = 0
-	else
-		min = state.index - 3
-	endif
-	
 	repeat
 		Print("Got result in " + str(iterations) + " iterations with an array length of " + str(ns.length))
 		print("click to continue...")
