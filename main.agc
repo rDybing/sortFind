@@ -204,8 +204,6 @@ function findIndex(ns as numSortedT[], ss as strSortedT[], state ref as stateT)
 				leftMost = middle
 			endif
 			inc iterations
-			print("iterations: " + str(iterations) + " || indexPointer: " + str(rightMost))
-			sync()
 		endWhile
 		
 		if rightMost < ns.length and ns[rightMost].myNumber = state.toFindNum
@@ -222,8 +220,6 @@ function findIndex(ns as numSortedT[], ss as strSortedT[], state ref as stateT)
 				leftMost = middle
 			endif
 			inc iterations
-			print("iterations: " + str(iterations) + " || indexPointer: " + str(rightMost))
-			sync()
 		endWhile
 		
 		if rightMost < ss.length and ss[rightMost].myString = state.toFindStr
